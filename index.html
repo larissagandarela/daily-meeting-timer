@@ -1,6 +1,7 @@
 <html>
 	<head>
 	    <title>Hello</title>
+		<script type="text/javascript" src="timer.js"></script>
 	</head>
 	<style>
 		input {
@@ -12,23 +13,13 @@
 			color: blue;
 		}
 		
-		
 		.btn_grande {
 			font-size: 20px;
 		}
 	</style>	
 	<body>
-		<input type="text" value="Nome 1" />
-		<input class="btn_grande btn_azul" type="button" value="Vai!" action="alert('oi')" />
-		<input type="text" value="00:00" />
-		<br />
-		<input type="text" value="Nome 1" />
-		<input class="btn_grande btn_azul" type="button" value="Vai!" action="alert('oi')" />
-		<input type="text" value="00:00" />
-		<br />
-		<input type="text" value="Nome 1" />
-		<input class="btn_grande" type="button" value="Vai!" action="alert('oi')" />
-		<input type="text" value="00:00" />
+		<button class="btn_grande btn_azul" onclick="iniciaContagem()">Vai!</button> 
+		<input id="contador" type="text" value="60" />
 		<br />
 	</body>
 </html>
