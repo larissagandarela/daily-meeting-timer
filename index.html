@@ -6,7 +6,7 @@
 	<style>
 		input {
 			color: red;
-			font-size: 10px;
+			font-size: 20px;
 		}
 		
 		.btn_azul {
@@ -18,8 +18,17 @@
 		}
 	</style>	
 	<body>
-		<input type="button" class="btn_grande btn_azul" onclick="alternaEstadoContagem()" value="Vaaai!" />
-		<input id="contador" type="text" value="60" />
-		<br />
+		<div id="timer-template">
+			<input type="text" placeholder="Digite o nome..." />
+			<input type="button" class="btn_play_pause btn_grande btn_azul" onclick="alternaEstadoContagem(0)" value="Vaaai!" />
+			<input id="contador-0" class="contador" type="text" value="60" />
+			<br />
+		</div>
+		
+		<div id="timer-container">
+		</div>
+			
+		<input type="button" class="btn_grande btn_azul" onclick="adicionarContador()" value="Adicionar" />
+		
 	</body>
 </html>
